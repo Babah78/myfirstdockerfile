@@ -1,20 +1,6 @@
-#
-# Python Dockerfile
-#
-# https://github.com/Babah78/myfirstdockerfile/edit/master/Dockerfile
-#
+#python
 
-# Pull base image.
-FROM dockerfile/ubuntu
+FROM python:3
 
 # Install Python.
-RUN \
-  apt-get update && \
-  apt-get install -y python python-dev python-pip python-virtualenv && \
-  rm -rf /var/lib/apt/lists/*
-
-# Define working directory.
-WORKDIR /data
-
-# Define default command.
-CMD ["bash"]
+RUN apt-get update 
