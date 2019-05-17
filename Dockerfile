@@ -1,6 +1,6 @@
 #python
 
 FROM python:3
+ADD hello.py /
 
-# Install Python.
-RUN apt-get update 
+CMD [ "python","./hello.py"}
