@@ -1,6 +1,7 @@
 #python
 
 FROM python:3
-RUN hello.py /
+ADD hello.py/
+RUN ./hello.py
 
 CMD [ "python","./hello.py"}
